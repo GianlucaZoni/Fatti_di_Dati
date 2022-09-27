@@ -1,0 +1,497 @@
+/* Se metto questi: si bugga la scrolling :(
+body {
+    overflow-x: hidden !important;
+}
+.blocker {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+*/
+body {
+  overflow-x: hidden !important;
+}
+@font-face {
+  font-family: "SofiaPro-Light";
+  src: url("../assets/fonts/SofiaPro-Light.otf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../assets/fonts/Helvetica.otf");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../assets/fonts/Helvetica-Bold.otf");
+}
+@font-face {
+  font-family: "TTNorms-Regular";
+  src: url("../assets/fonts/TTNorms-Regular.otf");
+}
+@font-face {
+  font-family: "BastardoGroteskish";
+  src: url("../assets/fonts/BastardoGroteskish.otf");
+}
+
+@font-face {
+  font-family: "BastardoGroteskish-Bold";
+  src: url("../assets/fonts/BastardoGroteskish-Bold.otf");
+}
+
+@font-face {
+  font-family: "CarbonPlus";
+  src: url("../assets/fonts/CarbonPlus.otf");
+}
+
+@font-face {
+  font-family: "CarbonPlus-Bold";
+  src: url("../assets/fonts/CarbonPlus-Bold.otf");
+}
+
+@font-face {
+  font-family: "CronosPro-Semibold";
+  src: url("../assets/fonts/CronosPro-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Dharma-Gothic-Rounded-E-Bold";
+  src: url("../assets/fonts/Dharma-Gothic-Rounded-E-Bold.otf");
+}
+
+@font-face {
+  font-family: "DrukTextWide-Heavy";
+  src: url("../assets/fonts/DrukTextWide-Heavy.otf");
+}
+
+@font-face {
+  font-family: "DrukText-Medium";
+  src: url("../assets/fonts/DrukText-Medium.otf");
+}
+
+@font-face {
+  font-family: "EuclidCircularA-Light";
+  src: url("../assets/fonts/EuclidCircularA-Light.otf");
+}
+
+@font-face {
+  font-family: "EuclidCircularA-Regular";
+  src: url("../assets/fonts/EuclidCircularA-Regular.otf");
+}
+
+@font-face {
+  font-family: "GT-America-Expanded-Thin";
+  src: url("../assets/fonts/GT-America-Expanded-Thin.otf");
+}
+@font-face {
+  font-family: "GT-America-Extended-Medium";
+  src: url("../assets/fonts/GT-America-Extended-Medium.otf");
+}
+@font-face {
+  font-family: "GT-America-Mono-Bold";
+  src: url("../assets/fonts/GT-America-Mono-Bold.otf");
+}
+
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: url("../assets/fonts/IntegralCF-Bold.otf");
+}
+
+@font-face {
+  font-family: "IntegralCF-Regular";
+  src: url("../assets/fonts/IntegralCF-Regular.otf");
+}
+
+@font-face {
+  font-family: "PAGRevolucion";
+  src: url("../assets/fonts/PAGRevolucion.otf");
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("../assets/fonts/Rubik-Bold.otf");
+}
+
+@font-face {
+  font-family: "SofiaPro-Bold";
+  src: url("../assets/fonts/SofiaPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Sourtype-Black";
+  src: url("../assets/fonts/Sourtype-Black.otf");
+}
+
+@font-face {
+  font-family: "StingerFit-Bold";
+  src: url("../assets/fonts/StingerFit-Bold.otf");
+}
+/* .containerprogetti, .containerprogettismall {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} */
+
+.containerprogetti, .containerprogettismall {
+  font-family: SofiaPro-Light;
+}
+
+.coloresfondo {
+  background-color: white;
+}
+
+/*Correzioni ottiche dovute al rientro del font Sofia*/
+.titolosmall, .titoloprogetto {
+margin-left: -7px
+}
+
+.payoff, .payoffsmall {
+margin-left: -2px;
+}
+
+/*Definizione stile del pannello del progetto successivo*/
+
+
+/* @font-face {
+  font-family: "BastardoGroteskish-Bold";
+  src: url('assets/fonts/BastardoGroteskish-Bold.ttf');
+} */
+
+
+
+.prevprogetto, .prev {
+background-color: #8fe87d;
+cursor: url("/media/01tic/TIC.svg") 62 62, auto;
+font-family: 'EuclidCircularA-Regular', sans-serif;
+color: black;
+}
+.nextprogetto, .prox {
+background-color: #8EE002;
+cursor: url("/media/03sicko/sicko.svg") 62 62, auto;
+font-family: 'BastardoGroteskish-Bold', sans-serif;
+color: black;
+}
+
+
+.containerprogettismall {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+  position: relative;
+  top: 40vh;
+  z-index: 10;
+  transition: 1s;
+}
+
+#containervideosmall {
+  width: 100vw;
+  max-width: 100vw;
+  height: 40vh;
+  max-height: 40vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+#myVideosmall {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#icona {
+  position: absolute;
+  bottom: 3vw;
+  right: 3vw;
+  width: 8vw;
+  max-width: 5vh;
+  height: auto;
+}
+#icona2 {
+  position: absolute;
+  bottom: 3vw;
+  right: 3vw;
+  width: 8vw;
+  max-width: 5vh;
+  height: auto;
+  display: none;
+}
+
+.textsmall {
+  width: 94vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  text-align: left;
+}
+
+.paragrafo {
+  padding-bottom: 10vh;
+  clear: both;
+}
+
+.links {
+font-size: 15px;
+float: left;
+padding-right: 15px;
+padding-bottom: 21px;
+}
+.titolosmall {
+font-size: 81px;
+line-height: 90%;
+padding-bottom: 15px;
+clear: both;
+}
+.titolosmallUstress {
+font-size: 72px;
+line-height: 90%;
+padding-bottom: 15px;
+clear: both;
+}
+.payoffsmall {
+font-size: 27px;
+padding-left: 4px;
+line-height: 1.3;
+padding-bottom: 10vh;
+}
+.sottotitolo {
+font-size: 36px;
+line-height: 1.2;
+padding-bottom: 10vh;
+}
+.credits {
+font-size: 15px;
+padding-bottom: 10vh;
+}
+.corpo {
+font-size: 21px;
+}
+
+.copertura {
+height: 21vh;
+opacity: 0;
+}
+.nextprogetto {
+height: 25vh;
+width: 100vw;
+position: fixed;
+bottom: 0;
+z-index: -100;
+text-align: center;
+  transition: 1s;
+}
+
+.nextprogetto .testo {
+padding-top: 9vh;
+text-align: center;
+font-size: 1.2em;
+}
+
+.logonext {
+width: 20vw;
+max-width: 20vh;
+/* max-height: 50vh; */
+/* padding-top: 0.5vh; */
+margin-left: auto;
+margin-right: auto;
+}
+
+
+@media only screen
+  and (min-width : 768px)
+  and (max-width : 1024px)
+{
+
+  #icona {
+    width: 4vw;
+    max-width: 5vh;
+  }
+  #icona2 {
+    width: 4vw;
+    max-width: 5vh;
+  }
+
+  .logonext {
+  width: 20vw;
+  }
+}
+
+@media only screen
+  and (min-width : 768px)
+  and (max-width : 1024px)
+  and (orientation:landscape)
+{
+  .containerprogettismall {
+    top: 60vh;
+  }
+
+  #containervideosmall {
+    height: 60vh;
+    max-height: 60vh;
+  }
+
+  }
+
+  /* OH FUCKmobile */
+
+  @font-face {
+      font-family: "Helvetica";
+      src: url('../assets/fonts/Helvetica.otf');
+  }
+  
+  @font-face {
+      font-family: "Helvetica-Bold";
+      src: url('../assets/fonts/Helvetica-Bold.otf');
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+  
+  }
+  
+  body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    max-width: 100vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  a {
+   color: black;
+   text-decoration: none;
+  }
+  
+  .desktop {
+    display: none;
+  }
+  
+  .second {
+    background-color: #d6d6d6;
+    display: none;
+    top:0;
+    position: absolute;
+    padding:12vh 4vw 4vw 4vw;
+    z-index: 100;
+    font-family: Helvetica-Bold;
+    font-size: 17px;
+  }
+  
+  .second a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+  }
+  
+  .colophon {
+    font-size:0.8em;
+    padding-bottom:15vh;
+    list-style:none;
+  }
+  
+  .colophon ul {
+    list-style: none;
+    margin-top: 20px;
+    font-family: Helvetica-Bold;
+    text-transform: uppercase;
+  }
+  
+  .colophon li{
+      font-family: Helvetica;
+  }
+  
+  .colophon ul li {
+    list-style: none;
+  
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+  
+  #title{
+    font-family: Helvetica-Bold;
+    font-size: 5vw;
+    margin-left: 3vw;
+    margin-top: 1.5vw;
+  }
+  
+  #subtitle{
+    font-family: Helvetica-Bold;
+    font-size: 5vw;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 2vh;
+    margin-left: 3.5vw;
+    z-index: 10;
+    background-color: transparent;
+  }
+  
+  .menu ul {
+    position: absolute;
+    width: 100vw;
+  }
+  
+  .menu li {
+     font-family: Helvetica-Bold;
+     display: inline-block;
+     list-style: none;
+     font-size: 24px;
+  }
+  
+  .menu2 {
+    position: fixed;
+    bottom: 4.5vh;
+    margin-left: 3.5vw;
+    z-index: 1000;
+  }
+  
+  .menu2 ul {
+    position: absolute;
+    width: 100vw;
+  }
+  
+   .menu2 li {
+    font-family: Helvetica-Bold;
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+  }
+  
+  
+  @media only screen
+    and (max-width : 1024px)
+  {
+    #title{
+      font-family: Helvetica-Bold;
+      font-size: 24px;
+      margin-left: 3vw;
+      margin-top: 1.5vw;
+    }
+  
+    #subtitle{
+      font-family: Helvetica-Bold;
+      font-size: 24px;
+    }
+  }
+  
