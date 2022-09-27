@@ -58,6 +58,11 @@ body {
 }
 
 @font-face {
+  font-family: "Dharma-Gothic-Rounded-E-Regular";
+  src: url("../assets/fonts/Dharma Gothic Rounded E Regular.otf");
+}
+
+@font-face {
   font-family: "DrukTextWide-Heavy";
   src: url("../assets/fonts/DrukTextWide-Heavy.otf");
 }
@@ -124,50 +129,10 @@ body {
   font-family: "StingerFit-Bold";
   src: url("../assets/fonts/StingerFit-Bold.otf");
 }
-/* .containerprogetti, .containerprogettismall {
-  font-family: "sofia-pro", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-} */
 
-.containerprogetti, .containerprogettismall {
-  font-family: SofiaPro-Light;
-}
-
-.coloresfondo {
-  background-color: white;
-}
-
-/*Correzioni ottiche dovute al rientro del font Sofia*/
-.titolosmall, .titoloprogetto {
-margin-left: -7px
-}
-
-.payoff, .payoffsmall {
-margin-left: -2px;
-}
-
-/*Definizione stile del pannello del progetto successivo*/
-
-
-/* @font-face {
-  font-family: "BastardoGroteskish-Bold";
-  src: url('assets/fonts/BastardoGroteskish-Bold.ttf');
-} */
-
-
-
-.prevprogetto, .prev {
-background-color: #8fe87d;
-cursor: url("/media/01tic/TIC.svg") 62 62, auto;
-font-family: 'EuclidCircularA-Regular', sans-serif;
-color: black;
-}
-.nextprogetto, .prox {
-background-color: #8EE002;
-cursor: url("/media/03sicko/sicko.svg") 62 62, auto;
-font-family: 'BastardoGroteskish-Bold', sans-serif;
-color: black;
+@font-face {
+  font-family: "Mattone-Regular";
+  src: url("../assets/fonts/Mattone-Regular.otf");
 }
 
 
@@ -241,15 +206,15 @@ padding-bottom: 21px;
 }
 .titolosmall {
 font-size: 81px;
-line-height: 90%;
+line-height: 0.8;
 padding-bottom: 15px;
 clear: both;
 }
 .titolosmallUstress {
-font-size: 72px;
-line-height: 90%;
-padding-bottom: 15px;
-clear: both;
+  font-size: 72px;
+  line-height: 0.8;
+  padding-bottom: 15px;
+  clear: both;
 }
 .payoffsmall {
 font-size: 27px;
@@ -265,9 +230,11 @@ padding-bottom: 10vh;
 .credits {
 font-size: 15px;
 padding-bottom: 10vh;
+line-height: 1.4;
 }
 .corpo {
 font-size: 21px;
+line-height: 1.5;
 }
 
 .copertura {
@@ -279,22 +246,23 @@ height: 25vh;
 width: 100vw;
 position: fixed;
 bottom: 0;
-z-index: -100;
+z-index: -10;
 text-align: center;
-  transition: 1s;
+transition: 1s;
 }
 
 .nextprogetto .testo {
-padding-top: 9vh;
+padding-top: 8vh;
 text-align: center;
 font-size: 1.2em;
 }
 
 .logonext {
-width: 20vw;
+/* width: 30vw; */
 max-width: 20vh;
-/* max-height: 50vh; */
-/* padding-top: 0.5vh; */
+max-height: 10vh;
+/* padding-top: 1.6vh; */
+padding-top: 0.5vh;
 margin-left: auto;
 margin-right: auto;
 }
@@ -341,22 +309,22 @@ margin-right: auto;
       font-family: "Helvetica";
       src: url('../assets/fonts/Helvetica.otf');
   }
-  
+
   @font-face {
       font-family: "Helvetica-Bold";
       src: url('../assets/fonts/Helvetica-Bold.otf');
   }
-  
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-  
+
   body, html {
-  
+
   }
-  
+
   body {
     display: -webkit-box;
     display: flex;
@@ -369,16 +337,16 @@ margin-right: auto;
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   a {
    color: black;
    text-decoration: none;
   }
-  
+
   .desktop {
     display: none;
   }
-  
+
   .second {
     background-color: #d6d6d6;
     display: none;
@@ -389,35 +357,35 @@ margin-right: auto;
     font-family: Helvetica-Bold;
     font-size: 17px;
   }
-  
+
   .second a {
     color: black;
     text-decoration: none;
     border-bottom: 1px black solid;
   }
-  
+
   .colophon {
     font-size:0.8em;
     padding-bottom:15vh;
     list-style:none;
   }
-  
+
   .colophon ul {
     list-style: none;
     margin-top: 20px;
     font-family: Helvetica-Bold;
     text-transform: uppercase;
   }
-  
+
   .colophon li{
       font-family: Helvetica;
   }
-  
+
   .colophon ul li {
     list-style: none;
-  
+
   }
-  
+
   @keyframes slide {
     0% {
       transform: translateX(-25%);
@@ -426,19 +394,19 @@ margin-right: auto;
       transform: translateX(25%);
     }
   }
-  
+
   #title{
     font-family: Helvetica-Bold;
     font-size: 5vw;
     margin-left: 3vw;
     margin-top: 1.5vw;
   }
-  
+
   #subtitle{
     font-family: Helvetica-Bold;
     font-size: 5vw;
   }
-  
+
   .menu {
     position: fixed;
     top: 2vh;
@@ -446,39 +414,39 @@ margin-right: auto;
     z-index: 10;
     background-color: transparent;
   }
-  
+
   .menu ul {
     position: absolute;
     width: 100vw;
   }
-  
+
   .menu li {
      font-family: Helvetica-Bold;
      display: inline-block;
      list-style: none;
      font-size: 24px;
   }
-  
+
   .menu2 {
     position: fixed;
     bottom: 4.5vh;
     margin-left: 3.5vw;
     z-index: 1000;
   }
-  
+
   .menu2 ul {
     position: absolute;
     width: 100vw;
   }
-  
+
    .menu2 li {
     font-family: Helvetica-Bold;
     display: inline-block;
     list-style: none;
     font-size: 14px;
   }
-  
-  
+
+
   @media only screen
     and (max-width : 1024px)
   {
@@ -488,7 +456,7 @@ margin-right: auto;
       margin-left: 3vw;
       margin-top: 1.5vw;
     }
-  
+
     #subtitle{
       font-family: Helvetica-Bold;
       font-size: 24px;

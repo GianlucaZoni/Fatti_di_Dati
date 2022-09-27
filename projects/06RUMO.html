@@ -1,12 +1,712 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <title>RUMO</title>
+  <link rel="icon" type="image/x-icon" href="/assets/fatti_di_dati_favicon.ico">
+
+  <!-- <link rel="stylesheet" href="../css/indexDesktop.css" media='screen and (min-width: 1025px)'> -->
+  <!-- <link rel="stylesheet" href="../css/indexMobile.css" media='screen and (max-width: 1024px)'> -->
+
+  <link rel="stylesheet" href="../css/projectsDesktop.css" media='screen and (min-width: 1025px)'>
+  <link rel="stylesheet" href="../css/projectsMobile.css" media='screen and (max-width: 1024px)'>
+
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/bhd2vlr.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="speculative design, data, interaction design, Politecnico di Milano"/>
+  <meta name="description" content="24 hours, 12 projects, 6 months"/>
+  <meta name="subject" content="lab sintesi">
+  <meta name="copyright"content="Synthesis Design Studio, C1, PoliMi">
+  <meta name="language" content="IT, EN">
+  <meta name="robots" content="index,follow" />
+  <meta name="abstract" content="24 hours, 12 projects, 6 months">
+  <meta name="topic" content="Speculative design">
+  <meta name="copyright" content="Politecnico di Milano">
+  <meta name="category" content="speculative design, interaction design">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
+  <meta name="rating" content="General">
+  <meta name="revisit-after" content="7 days">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+ <style>
+body {
+  background-color: #600ff5;
+}
+
+  .containerprogetti, .containerprogettismall {
+    font-family: 'StingerFit-Bold', sans-serif;
+    color: white;
+  }
+  a, span, .open {
+    color: white;
+  }
+  .coloresfondo {
+    background-color: #600ff5;
+}
+
+
+@media only screen
+  and (min-width : 1024px)
+{
+  .player {
+    cursor: url("../media/02dissit/Play2 white.svg") 37 37, auto;
+  }
+  .closer {
+    cursor: url("../media/02dissit/Close white.svg") 20 20, auto;
+  }
+    }
+
+
+#myVideo {
+ object-fit: contain;
+}
+
+
+.containerYT {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.videoYT {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* correzioni tipografiche per il carattere crybaby*/
+
+.links, .credits, .corpo {
+  font-family: 'Mattone-Regular', sans-serif;
+}
+
+  .prevprogetto, .prev {
+    background-color: #024236;
+    cursor: url("../media/05mor/mor.svg") 62 62, auto;
+    font-family: 'CronosPro-Semibold', sans-serif;
+  color: #939960;
+  }
+  .nextprogetto, .prox {
+  background-color: #989898;
+  cursor: url("../media/07uai/uai.svg") 62 62, auto;
+  font-family: 'GT-America-Mono-Bold', sans-serif;
+  color: #08FF08;
+  }
+  .nextprogetto .testo {
+  color: #08FF08;
+  }
+
+  </style>
+
 </head>
+
 <body>
-    <h1>Hello mom</h1>
+<div class="blocker">
+  <div class="desktop">
+    <div class="wrapper" style="z-index: 1000; position: fixed;">
+
+      <ul style="list-style-type: none;">
+        <li>
+            <div id="title" class="ita"><a href="../home.html">FATTI_DI_DATI<br><span id="subtitle">24 ore. 12 progetti. 6 mesi.</span></a></div>
+            <div id="title" class="eng"><a href="../home.html">MATTER_OF_DATA<br><span id="subtitle">24H. 12 projects. 6 months.</span></a></div>
+        </li>
+
+        <li style="font-family: Helvetica-Bold; text-decoration: none; position:fixed; right:5vw; text-align:right;font-size: 70px; top:0vh;" class="open">
+          <span style="font-family: Helvetica;"> + </span>
+        </li>
+
+        <li style="float: left; cursor:pointer; font-family: Helvetica-Bold; text-decoration: none; position:fixed; left:5vw; bottom:2vh">
+          <span class="IT">IT</span>
+          <span style="opacity:0.3">/</span>
+          <span class="EN">EN</span>
+        </li>
+        <li style="float: right; cursor:pointer; font-family: Helvetica-Bold; text-decoration: none; position:fixed; right:5vw; bottom:2vh"><a href="https://www.instagram.com/fatti_di_dati" target="_blank"> @FATTI_DI_DATI</a> </li>
+
+      </ul>
+    </div>
+
+    <div class="second" id="details">
+
+        <div style="width:47vw; display:inline-block; vertical-align:top">
+            <div class="ita" style="padding-top:10vh; position:relative">
+              La contemporaneità è fatta di dati.<br>
+              Ciascuno di noi ne produce continuamente, le mega-corporation ne hanno bisogno per alimentare i loro business.<br>
+              Dati per produrre valore, informazione (o disinformazione), opinione.
+              <br><br>
+              Siamo fatti di dati, in tutti i sensi.
+              <br><br>
+              12 progetti che usano i dati come pretesto e strumento per far riflettere sul nostro mondo, sulle nostre sovrastrutture, sui nostri limiti.
+              <br><br>
+              Dati quotidiani prodotti dalle nostre attività, dalle nostre idiosincrasie, dai nostri comportamenti.
+              <br><br>
+              12 progetti realizzati nell’arco di 6 mesi, 12 prototipi di macchine comunicative per speculare e criticare, immaginando presenti alternativi o futuri possibili.
+              <br><br><br>
+              <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Scarica il catalogo digitale</a>
+              <br>
+              <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:12vw; margin-top:5vh; margin-bottom:1vh"></a>
+              <br>
+              <span style="font-family: Helvetica; font-size:16px; line-height:1">
+                Politecnico di Milano <br>
+                Corso di Laurea in Design della Comunicazione <br>
+                Laboratorio di Sintesi Finale C1 <br>
+                Anno Accademico 2021-2022 <br>
+              </span>
+            </div>
+
+            <div class="eng" style="padding-top:10vh; position:relative">
+                Contemporaneity is made up of data.<br>
+                Each of us produces it continuously, mega-corporations need it to fuel their businesses.<br>
+                Data to produce value, information (or disinformation), opinion.
+                <br><br>
+                We are made of data, in every sense.
+                <br><br>
+                12 projects that use data as a pretext and tool to make us reflect on our world, on our superstructures, on our limits.
+                <br><br>
+                Daily data produced by our activities, by our idiosyncrasies, by our behaviors.
+                <br><br>
+                12 projects carried out over 6 months, 12 prototypes of communication machines to speculate and criticize, imagining alternative presents or possible futures.
+                <br><br><br>
+                <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Download the digital catalog</a>
+                <br>
+                <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:12vw; margin-top:5vh; margin-bottom:1vh"></a>
+                <br>
+                <span style="font-family: Helvetica; font-size:16px; line-height:1">
+                  Politecnico di Milano <br>
+                  Bachelor in Communication Design <br>
+                  Final Synthesis Design Studio C1<br>
+                  Academic Year 2021-2022 <br>
+                </span>
+              </div>
+
+
+
+      </div>
+
+      <div style="width:45vw; position: absolute; margin-left: 2.5vw; top:0; left:52vw">
+        <div class="colophon" style="width:16vw; display:inline-block">
+          <ul>
+            <li>Project Leader</li><br>
+            <li>Riccardo Ventura</li>
+          </ul>
+
+          <ul>
+            <li>Visual Identity </li>
+            <li>Sofia Bonfanti</br>
+                Edoardo Ceriani</br>
+                Giovanni Clericetti</br>
+                Francesco Nozza</li>
+          </ul>
+
+          <ul>
+            <li>Art Direction</li>
+            <li>Andrea Sanguineti</li>
+          </ul>
+
+          <ul>
+            <li>Editorial Design</li>
+            <li>
+              Chiara Barberi</br>
+              Sofia Cambiaggio</br>
+              Marta Cuccurullo</br>
+            </li>
+          </ul>
+
+          <ul>
+            <li>Social Media</li>
+            <li>Nausica Bianchi<br>
+              Luigi Raspa</li>
+          </ul>
+
+          <ul>
+            <li>Website</li>
+            <li>Andrea Nodari</br>
+              Marco Trabattoni</br>
+              Gianluca Zoni
+            </li>
+          </ul>
+
+        </div>
+        <div class="colophon" style="margin-left: 1vw; width:16vw; display:inline-block;vertical-align:top">
+
+            <ul>
+              <li>Teachers</li>
+              <li>
+                Francesco E. Guida<br>
+                Pietro Buffa di Castelalto<br>
+                Alessandro Masserdotti<br>
+                Giacomo Scandolara
+              </li>
+            </ul>
+
+            <ul>
+              <li>Assistants</li>
+              <li>
+                Marcello J. Biffi <br>
+                Michele Invernizzi <br>
+                Adele Mazzali <br>
+                Claudia Tranti
+              </li>
+            </ul>
+
+            <ul>
+              <li>Links</li>
+              <li>
+                <a href="http://wordsworks.labsintesi-c1.info/" target="_blank">Words Works</a>
+              </li>
+              <li>
+                <a href="http://humans.labsintesi-c1.info/" target="_blank">WMHH?</a>
+              </li>
+              <li>
+                <a href="http://morte13.labsintesi-c1.info/" target="_blank">Morte - 13 solidi dubbi</a>
+              </li>
+              <li>
+                <a href="http://retuals.labsintesi-c1.info/" target="_blank">Retuals.</a>
+              </li>
+            </ul>
+
+            <!-- <ul>
+              <li>Endorsed by</li>
+              <li>
+                <a href="http://www.aiap.it" style="border:none" target="_blank"><img src="media/AIAP.png" alt="" style="width:12vw; margin-top:1vh"></a><br>
+              </li>
+            </ul> -->
+
+          </div>
+      </div>
+    </div>
+
+<div id="containervideo" class="player" onclick="fullsizevideo()">
+    <video autoplay loop muted id="myVideo">
+    <source src="../media/06rumo/rumo_teaser.mp4" type="video/mp4">
+  </video></div>
+<div class="containerprogetti">
+  <div class="coloresfondo">
+  <div class="text ita">
+            <div class="intro">
+                <div class="introintro">
+                        <div class="row">
+                            <div class="column">
+                                    <div class="titoloprogetto">
+                                       RUMO
+                                    </div>
+                                    <div class="payoff">
+                                      Diventa anche tu un Noise-hunter!
+                                    </div>
+                            </div>
+                            <div class="column">
+                                    <a href="https://matteo-ligori.github.io/SITO-FINALE/index.html" target="_blank"><div class="links">versusgames.com</div></a>
+                                    <a href="https://www.instagram.com/versus_boiz/" target="_blank"><div class="links">@versus_boyz</div></a>
+                                    <div class="sottotitolo">
+                                      E se le persone si sfidassero alla ricerca del rumore? 
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="column">
+                                       <div class="credits">
+                                          A CURA DI <br>
+                                          Lorenzo Ebale, Marta Costa Leite, Matteo Ligori, <br>Flor Marques da Silva, Francesco Seresi
+                                       </div>
+                             </div>
+                             <div class="column">
+                                       <div class="corpo">
+                                        L’intento di Rumo è quello di riportare attenzione sul tema della noise pollution. Questo problema, dibattuto ma molto spesso ignorato, è in realtà causa di problematiche al sistema uditivo e al ritmo circadiano, con conseguenti danni al benessere psico-fisico individuale.
+                                       </div>
+                            </div>
+                       </div>
+                </div>
+            </div>
+             <div class="row2">
+                 <div class="column">
+                       <div class="corpo sticky">
+                  Il rumore è più nocivo di quanto si pensi: i livelli di decibel registrati in una grande città come Milano sono spesso sopra alla soglia considerata dannosa.
+                        </div>
+                 </div>
+                 <div class="column">
+                       <img  src="../media/06rumo/1.png" width="100%" height="auto">
+                       <img  src="../media/06rumo/03.png" width="100%" height="auto">
+                </div>
+             </div>
+
+            <div class="row2">
+            <img  src="../media/06rumo/04.png" width="100%" height="auto">
+            </div>
+
+             <div class="row2">
+                 <div class="column">
+                       <div class="corpo sticky">
+                         Il fictional brand Versus raccoglie dati sul suono... Come lo fa? Tramite Rumo: un pupazzo di silicone che si gonfia con l’aumento dei decibel attorno a lui, trasmettendo i dati raccolti a una parte digitale, che stila una classifica tra i vari utenti.
+                       </div>
+                 </div>
+                 <div class="column">
+                       <img  src="../media/06rumo/06.png" width="100%" height="auto">
+                       <img  src="../media/06rumo/05.png" width="100%" height="auto">
+                 </div>
+            </div>
+            <div class="row2">
+            <img  src="../media/06rumo/07.png" width="100%" height="auto">
+            </div>
+
+            <div class="containerYT">
+              <iframe  class="videoYT" src="https://www.youtube.com/embed/7eEzzxJ7Bqc" title="RUMO The Noise Eater | Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+    <div class="text eng">
+              <div class="intro">
+                  <div class="introintro">
+                          <div class="row">
+                              <div class="column">
+                                      <div class="titoloprogetto">
+                                         RUMO
+                                      </div>
+                                      <div class="payoff">
+                                         Become a Noise-hunter!
+                                      </div>
+                              </div>
+                              <div class="column">
+                                <a href="https://matteo-ligori.github.io/SITO-FINALE/index.html" target="_blank"><div class="links">versusgames.com</div></a>
+                                <a href="https://www.instagram.com/versus_boiz/" target="_blank"><div class="links">@versus_boyz</div></a>
+                                      <div class="sottotitolo">
+                                        What if people challenged each other in search of noise? 
+                                      </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                               <div class="column">
+                                         <div class="credits">
+                                            CURATED BY<br>
+                                            Lorenzo Ebale, Marta Costa Leite, Matteo Ligori, <br>Flor Marques da Silva, Francesco Seresi
+                                         </div>
+                               </div>
+                               <div class="column">
+                                         <div class="corpo">
+                                          Rumo’s aim is to bring awareness to the problem of noise pollution. This problem, discussed but often ignored, it actually causes problems at the auditory system and to the cicardian rhythm, with consequent damages to the individual psychophysical health.
+                                         </div>
+                              </div>
+                         </div>
+                  </div>
+              </div>
+               <div class="row2">
+                   <div class="column">
+                         <div class="corpo sticky">
+                           Noise is way more dangerous than we think: decibel levels registered in big cities like Milan are constantly over the edge of what it’s considered harmful.
+                         </div>
+                   </div>
+                   <div class="column">
+                     <img  src="../media/06rumo/1.png" width="100%" height="auto">
+                     <img  src="../media/06rumo/03.png" width="100%" height="auto">
+                   </div>
+               </div>
+
+              <div class="row2">
+                <img  src="../media/06rumo/04.png" width="100%" height="auto">
+              </div>
+
+               <div class="row2">
+                   <div class="column">
+                         <div class="corpo sticky">
+                           The fictional brand Versus collects sound datas... How is that possible? With Rumo: a silicon puppet that inflates as decibel levels increase around it, transmitting them to a digital part, which ranks them by user.
+                         </div>
+                   </div>
+                   <div class="column">
+                     <img  src="../media/06rumo/06.png" width="100%" height="auto">
+                     <img  src="../media/06rumo/05.png" width="100%" height="auto">
+                   </div>
+              </div>
+              <div class="row2">
+              <img  src="../media/06rumo/07.png" width="100%" height="auto">
+              </div>
+
+              <div class="containerYT">
+                <iframe  class="videoYT" src="https://www.youtube.com/embed/7eEzzxJ7Bqc" title="RUMO The Noise Eater | Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+    </div>
+    <div class="copertura">
+      <div class="prev" onmouseover="allargasx()" onmouseout="balance()" onclick="go05()"></div>
+      <div class="prox" onmouseover="allargadx()" onmouseout="balance()" onclick="go07()"></div>
+    </div>
+    </div>
+
+
+
+    <div class="altriprogetti">
+        <div class="prevprogetto">
+            <div class="testo ita">PROGETTO PRECEDENTE</div>
+            <div class="testo eng">PREVIOUS PROJECT</div>
+        </div>
+        <div class="nextprogetto">
+            <div class="testo ita">PROSSIMO PROGETTO</div>
+            <div class="testo eng">NEXT PROJECT</div>
+        </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="mobile">
+
+    <div class="menu" style="z-index:200;">
+      <ul>
+        <li style="float:left;" class="ita"><a href="/home.html">FATTI_DI_DATI<br><span id="subtitle">24 ore. 12 progetti. 6 mesi.</span></a></li>
+        <li style="float:left;" class="eng"><a href="/home.html">MATTER_OF_DATA<br><span id="subtitle">24h. 12 projects. 6 months.</span></a></li>
+        <li style="float:right; line-height:30px; margin-right:7vw; font-family: Helvetica ; font-size: 64px; z-index:200;" class="open">+</li>
+      </ul>
+    </div>
+
+    <div class="second">
+        <div class="ita">
+            La contemporaneità è fatta di dati.<br>
+            Ciascuno di noi ne produce continuamente, le mega-corporation ne hanno bisogno per alimentare i loro business.<br>
+            Dati per produrre valore, informazione (o disinformazione), opinione.
+            <br><br>
+            Siamo fatti di dati, in tutti i sensi.
+            <br><br>
+            12 progetti che usano i dati come pretesto e strumento per far riflettere sul nostro mondo, sulle nostre sovrastrutture, sui nostri limiti.
+            <br><br>
+            Dati quotidiani prodotti dalle nostre attività, dalle nostre idiosincrasie, dai nostri comportamenti.
+            <br><br>
+            12 progetti realizzati nell’arco di 6 mesi, 12 prototipi di macchine comunicative per speculare e criticare, immaginando presenti alternativi o futuri possibili.
+            <br><br><br>
+
+            <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Scarica il catalogo digitale</a>
+            <br>
+            <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:45vw; margin-top:5vh"></a>
+            <br><br><span style="font-family: Helvetica;">
+            Politecnico di Milano <br>
+            Corso di Laurea in Design della Comunicazione <br>
+            Laboratorio di Sintesi Finale C1 <br>
+            Anno Accademico 2021-2022 <br></span>
+        </div>
+
+        <div class="eng">
+            Contemporaneity is made up of data. Each of us produces it continuously, mega-corporations need it to fuel their businesses. Data to produce value, information (or disinformation), opinion.
+            <br><br>
+            We are made of data, in every sense.
+            <br><br>
+            12 projects that use data as a pretext and tool to make us reflect on our world, on our superstructures, on our limits.
+            <br><br>
+            Daily data produced by our activities, by our idiosyncrasies, by our behaviors.
+            <br><br>
+            12 projects carried out over 6 months, 12 prototypes of communication machines to speculate and criticize, imagining alternative presents or possible futures.
+            <br><br><br>
+
+            <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Download the digital catalog</a>
+            <br>
+            <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:45vw; margin-top:5vh"></a>
+            <br><br><span style="font-family: Helvetica;">
+              Politecnico di Milano <br>
+              Bachelor in Communication Design <br>
+              Final Synthesis Design Studio C1<br>
+              Academic Year 2021-2022 <br></span>
+        </div>
+        <br>
+
+        <div class="colophon">
+
+          <ul>Project Leader</ul>
+          <li>Riccardo Ventura</li>
+
+          <ul>Visual Identity</ul>
+          <li>Sofia Bonfanti</li>
+          <li>Edoardo Ceriani</li>
+          <li>Giovanni Clericetti</li>
+          <li>Francesco Nozza</li>
+
+          <ul>Art Direction</ul>
+          <li>Andrea Sanguineti</li>
+
+          <ul>Editorial Design</ul>
+          <li>Chiara Barberi</li>
+          <li>Sofia Cambiaggio</li>
+          <li>Marta Cuccurullo</li>
+
+          <ul>Social Media</ul>
+          <li>Nausica Bianchi</li>
+          <li>Luigi Raspa</li>
+
+          <ul>Website</ul>
+          <li>Andrea Nodari</li>
+          <li>Marco Trabattoni</li>
+          <li>Gianluca Zoni</li>
+
+          <ul>Teachers</ul>
+          <li>Francesco E. Guida</li>
+          <li>Pietro Buffa di Castelalto</li>
+          <li>Alessandro Masserdotti</li>
+          <li>Giacomo Scandolara</li>
+
+          <ul>Assistants</ul>
+          <li>Marcello J. Biffi</li>
+          <li>Michele Invernizzi</li>
+          <li>Claudia Tranti</li>
+
+          <ul>Links</ul>
+            <li>
+              <a href="http://wordsworks.labsintesi-c1.info/" target="_blank">Words Works</a>
+            </li>
+            <li>
+              <a href="http://humans.labsintesi-c1.info/" target="_blank">WMHH?</a>
+            </li>
+            <li>
+              <a href="http://morte13.labsintesi-c1.info/" target="_blank">Morte - 13 solidi dubbi</a>
+            </li>
+            <li>
+              <a href="http://retuals.labsintesi-c1.info/" target="_blank">Retuals.</a>
+            </li>
+
+          <!-- <ul>Endorsed By</ul>
+          <li><a href="http://www.aiap.it" style="border:none" target="_blank"><img src="media/AIAP.png" alt="" style="width:45vw; margin-top:1vh"></a><br></li> -->
+        </div>
+      </div>
+
+    <div class="menu2">
+      <ul>
+        <li style="float: left; cursor:pointer">
+          <span class="IT">IT</span>
+          <span style="opacity:0.3">/</span>
+          <span class="EN">EN</span>
+        </li>
+        <li style=" float:right; margin-right:7vw"> <a href="https://www.instagram.com/fatti_di_dati" target="_blank">@FATTI_DI_DATI</a> </li>
+      </ul>
+    </div>
+
+    <div class="content">
+
+    <div id="containervideosmall" class="player" onclick="attivasound()">
+        <video autoplay loop muted id="myVideosmall">
+        <source src="../media/06rumo/rumo_teaser.mp4" type="video/mp4">
+      </video>
+      <img src="../media/02dissit/Muto white.svg" id="icona">
+      <img src="../media/02dissit/Sound white.svg" id="icona2">
+    </div>
+
+      <div class="containerprogettismall">
+      <div class="coloresfondo">
+        <div class="textsmall ita">
+                              <div class="paragrafotitoli">
+                                <a href="https://matteo-ligori.github.io/SITO-FINALE/index.html" target="_blank"><div class="links">versusgames.com</div></a>
+                                <a href="https://www.instagram.com/versus_boiz/" target="_blank"><div class="links">@versus_boyz</div></a>
+                                          <div class="titolosmall">
+                                             RUMO
+                                          </div>
+                                          <div class="payoffsmall">
+                                             Diventa anche tu un Noise-hunter!
+                                          </div>
+                              </div>
+                              <div class="paragrafo">
+
+                                          <div class="credits">
+                                            A CURA DI<br>
+                                            Lorenzo Ebale, Marta Costa Leite, Matteo Ligori, <br>Flor Marques da Silva, Francesco Seresi
+                                          </div>
+                                          <div class="sottotitolo">
+                                            E se le persone si sfidassero alla ricerca del rumore? 
+                                          </div>
+                                          <div class="corpo">
+                                            L’intento di Rumo è quello di riportare attenzione sul tema della noise pollution. Questo problema, dibattuto ma molto spesso ignorato, è in realtà causa di problematiche al sistema uditivo e al ritmo circadiano, con conseguenti danni al benessere psico-fisico individuale.
+                                          </div>
+                              </div>
+                              <div class="paragrafo">
+                                <img  src="../media/06rumo/1.png" width="100%" height="auto">
+                                <img  src="../media/06rumo/03.png" width="100%" height="auto">
+                              </div>
+                              <div class="paragrafo">
+                                <div class="corpo">
+                                   Il rumore è più nocivo di quanto si pensi: i livelli di decibel registrati in una grande città come Milano sono spesso sopra alla soglia considerata dannosa.
+                                </div>
+                              </div>
+                              <div class="paragrafo">
+                                <img  src="../media/06rumo/06.png" width="100%" height="auto">
+                              </div>
+                              <div class="paragrafo">
+                                <div class="corpo">
+                                  Il fictional brand Versus raccoglie dati sul suono... Come lo fa? Tramite Rumo: un pupazzo di silicone che si gonfia con l’aumento dei decibel attorno a lui, trasmettendo i dati raccolti a una parte digitale, che stila una classifica tra i vari utenti.
+                                </div>
+                              </div>
+                              <div class="containerYT">
+                                <iframe  class="videoYT" src="https://www.youtube.com/embed/7eEzzxJ7Bqc" title="RUMO The Noise Eater | Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                            </div>
+
+                      <div class="textsmall eng">
+                                            <div class="paragrafotitoli">
+                                              <a href="https://matteo-ligori.github.io/SITO-FINALE/index.html" target="_blank"><div class="links">versusgames.com</div></a>
+                                              <a href="https://www.instagram.com/versus_boiz/" target="_blank"><div class="links">@versus_boyz</div></a>
+                                                        <div class="titolosmall">
+                                                           RUMO
+                                                        </div>
+                                                        <div class="payoffsmall">
+                                                            Become a Noise-hunter!
+                                                        </div>
+                                            </div>
+                                            <div class="paragrafo">
+
+                                                        <div class="credits">
+                                                          CURATED BY<br>
+                                                          Lorenzo Ebale, Marta Costa Leite, Matteo Ligori, <br>Flor Marques da Silva, Francesco Seresi
+                                                        </div>
+                                                        <div class="sottotitolo">
+                                                          What if people challenged each other in search of noise? 
+                                                        </div>
+                                                        <div class="corpo">
+                                                           Rumo’s aim is to bring awareness to the problem of noise pollution. This problem, discussed but often ignored, it actually causes problems at the auditory system and to the cicardian rhythm, with consequent damages to the individual psychophysical health.
+                                                        </div>
+                                            </div>
+                                            <div class="paragrafo">
+                                              <img  src="../media/06rumo/1.png" width="100%" height="auto">
+                                              <img  src="../media/06rumo/03.png" width="100%" height="auto">
+                                            </div>
+                                            <div class="paragrafo">
+                                              <div class="corpo">
+                                                  Noise is way more dangerous than we think: decibel levels registered in big cities like Milan are constantly over the edge of what it’s considered harmful. The fictional brand Versus collects sound datas...
+                                              </div>
+                                            </div>
+                                            <div class="paragrafo">
+
+                                              <img  src="../media/06rumo/06.png" width="100%" height="auto">
+
+                                            </div>
+                                            <div class="paragrafo">
+                                              <div class="corpo">
+                                                How is that possible? With Rumo: a silicon puppet that inflates as decibel levels increase around it, transmitting them to a digital part, which ranks them by user.
+                                              </div>
+                                            </div>
+
+                                            <div class="containerYT">
+                                              <iframe  class="videoYT" src="https://www.youtube.com/embed/7eEzzxJ7Bqc" title="RUMO The Noise Eater | Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+
+                                            </div>
+                                            </div>
+                <a href="07UAI.html"><div class="copertura"></div></a>
+            </div>
+
+
+       <div class="nextprogetto"><a href="07UAI.html">
+           <div class="testo ita">PROSSIMO PROGETTO</div>
+           <div class="testo eng">NEXT PROJECT</div>
+           <img src="../media/07uai/uai.png" class="logonext"></a>
+       </div>
+
+    </div>
+
+</div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="../js/scriptProject.js"></script>
+
 </body>
 </html>

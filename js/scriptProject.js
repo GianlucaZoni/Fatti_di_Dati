@@ -8,6 +8,10 @@ $(".open").on("click", function (event) {
     // $("body").css("overflow", "hidden");
     $(".content").css("display","none");
 
+    $("a").css("color","black");
+    $("span").css("color","black");
+    $(".open").css("color","black");
+
     hidow = true;
   } else {
     $(".second").css("display", "none");
@@ -16,7 +20,12 @@ $(".open").on("click", function (event) {
 
     $(".content").css("display","initial");
 
-     $("body").css("overflow", "scroll");
+    $("body").css("overflow", "scroll");
+
+    $("a").css("color","black");
+    $("span").css("color","black");
+    $(".open").css("color","black");
+
     hidow = false;
 
   }
@@ -209,6 +218,12 @@ function go02() {
 function go03() {
     window.location.href = "../projects/03SICKO.html";
 }
+function go04() {
+    window.location.href = "../projects/04CRYBABY.html";
+}
+function go05() {
+    window.location.href = "../projects/05MOR.html";
+}   
 function go06() {
     window.location.href = "../projects/06RUMO.html";
 }
