@@ -1,0 +1,401 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../assets/fonts/Helvetica.otf");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../assets/fonts/Helvetica-Bold.otf");
+}
+
+@font-face {
+  font-family: "BastardoGroteskish";
+  src: url("../assets/fonts/BastardoGroteskish.otf");
+}
+
+@font-face {
+  font-family: "BastardoGroteskish-Bold";
+  src: url("../assets/fonts/BastardoGroteskish-Bold.otf");
+}
+
+@font-face {
+  font-family: "CarbonPlus";
+  src: url("../assets/fonts/CarbonPlus.otf");
+}
+
+@font-face {
+  font-family: "CarbonPlus-Bold";
+  src: url("../assets/fonts/CarbonPlus-Bold.otf");
+}
+
+@font-face {
+  font-family: "CronosPro-Semibold";
+  src: url("../assets/fonts/CronosPro-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Dharma-Gothic-Rounded-E-Bold";
+  src: url("../assets/fonts/Dharma-Gothic-Rounded-E-Bold.otf");
+}
+
+@font-face {
+  font-family: "DrukTextWide-Heavy";
+  src: url("../assets/fonts/DrukTextWide-Heavy.otf");
+}
+
+@font-face {
+  font-family: "EuclidCircularA-Light";
+  src: url("../assets/fonts/EuclidCircularA-Light.otf");
+}
+
+@font-face {
+  font-family: "EuclidCircularA-Regular";
+  src: url("../assets/fonts/EuclidCircularA-Regular.otf");
+}
+
+@font-face {
+  font-family: "GT-America-Expanded-Thin";
+  src: url("../assets/fonts/GT-America-Expanded-Thin.otf");
+}
+
+@font-face {
+  font-family: "GT-America-Mono-Bold";
+  src: url("../assets/fonts/GT-America-Mono-Bold.otf");
+}
+
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: url("../assets/fonts/IntegralCF-Bold.otf");
+}
+
+@font-face {
+  font-family: "PAGRevolucion";
+  src: url("../assets/fonts/PAGRevolucion.otf");
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("../assets/fonts/Rubik-Bold.otf");
+}
+
+@font-face {
+  font-family: "SofiaPro-Bold";
+  src: url("../assets/fonts/SofiaPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Sourtype-Black";
+  src: url("../assets/fonts/Sourtype-Black.otf");
+}
+
+@font-face {
+  font-family: "StingerFit-Bold";
+  src: url("../assets/fonts/StingerFit-Bold.otf");
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #cbcbcb;
+  overflow: hidden;
+}
+
+.mobile {
+  display: none;
+}
+
+#title {
+  font-family: Helvetica-Bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  position: fixed;
+  left: 5vw;
+}
+
+#subtitle {
+  font-family: Helvetica-Bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: fixed;
+}
+
+#title2 {
+  font-family: Helvetica-Bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  position: fixed;
+  left: 5vw;
+}
+
+#subtitle2 {
+  font-family: Helvetica-Bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: fixed;
+}
+
+.Outmain {
+  height: 100vh;
+}
+
+.Inmain {
+  height: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+.name a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.name a:hover {
+  opacity: 1;
+}
+
+.second {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  padding: 5vw;
+  z-index: 10;
+  font-family: Helvetica-Bold;
+  font-size: 18px;
+  background-color: #cbcbcb;
+
+}
+
+.second a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px black solid;
+}
+
+.colophon {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.colophon ul {
+  display: block;
+}
+
+.colophon ul li:first-child {
+  margin-top: 30px;
+  display: block;
+  list-style: none;
+  padding: 0;
+  font-family: Helvetica-Bold;
+  text-transform: uppercase;
+}
+
+.colophon ul li {
+  display: block;
+  clear: left;
+  font-family: Helvetica;
+  list-style: none;
+  float: left;
+}
+
+.open {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  #title {
+    font-size: 32px;
+  }
+  #subtitle {
+    font-size: 16px;
+  }
+}
+
+.wrapperMain {
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  font-size: 1.7em;
+  font-family: Helvetica-Bold;
+  color: #ffffff;
+}
+
+.wrapperMain a {
+  color: #ffffff;
+  opacity: 1;
+}
+
+#tic {
+  left: 48%;
+  top: 18%;
+  transition-duration: 0.5s;
+}
+
+#tic:hover {
+  /* font-family: "EuclidCircularA"; */
+  font-family: EuclidCircularA-Regular;
+  font-weight: 700;
+  font-size: 2em;
+  transform: translateY(-15%);
+}
+
+#dissit {
+  right: 50%;
+  top: 24%;
+  transition-duration: 0.5s;
+}
+
+#dissit:hover {
+  /* font-family: "SofiaPro"; */
+  font-family: SofiaPro-Bold;
+  font-weight: 700;
+  font-size: 1.9em;
+  transform: translateY(-15%);
+}
+
+#sicko {
+  right: 50%;
+  top: 30%;
+  transition-duration: 0.5s;
+}
+
+#sicko:hover {
+  /* font-family: "BastardoGroteskish"; */
+  font-family: BastardoGroteskish-Bold;
+  font-weight: 700;
+  font-size: 2em;
+  transform: translateY(7%);
+}
+
+#crybaby {
+  right: 50%;
+  top: 36%;
+  transition-duration: 0.5s;
+}
+
+#crybaby:hover {
+  /* font-family: "DharmaGothicRoundedE"; */
+  /* font-family: Dharma-Gothic-Rounded-E; */
+  font-family: PAGRevolucion;
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  transform: translateY(-5%);
+}
+
+#mor {
+  right: 50%;
+  top: 42%;
+  transition-duration: 0.5s;
+}
+
+#mor:hover {
+  font-family: Rubik-Bold;
+  font-weight: 600;
+  font-size: 2.2em;
+  transform: translateY(-2%);
+}
+
+#rumo {
+  right: 50%;
+  top: 48%;
+  transition-duration: 0.5s;
+}
+
+#rumo:hover {
+  font-family: StingerFit-Bold;
+  font-weight: 600;
+  font-size: 2em;
+  transform: translateY(-2%);
+}
+
+#uai {
+  left: 48%;
+  top: 54%;
+  transition-duration: 0.5s;
+}
+
+#uai:hover {
+  font-family: GT-America-Mono-Bold;
+  font-weight: 400;
+  font-size: 1.9em;
+  transform: translateY(-10%);
+}
+
+#sourdata {
+  right: 50%;
+  top: 60%;
+  transition-duration: 0.5s;
+}
+
+#sourdata:hover {
+  font-family: SourType-Black;
+  font-size: 1.8em;
+  transform: translateY(25%);
+}
+
+#freya {
+  left: 48%;
+  top: 66%;
+  transition-duration: 0.5s;
+}
+
+#freya:hover {
+  font-family: GT-America-Expanded-Thin;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  transform: translateY(-10%);
+}
+
+#nexnet {
+  left: 48%;
+  top: 72%;
+  transition-duration: 0.5s;
+}
+
+#nexnet:hover {
+  font-family: CarbonPlus-Bold;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  transform: translateY(-5%);
+}
+
+#ustress {
+  right: 50%;
+  top: 78%;
+  transition-duration: 0.5s;
+}
+
+#ustress:hover {
+  font-family: IntegralCF-Bold;
+  font-size: 1.8em;
+
+  transform: translateY(-8%);
+}
+
+#discordia {
+  left: 48%;
+  top: 84%;
+  transition-duration: 0.5s;
+}
+
+#discordia:hover {
+  font-family: DrukTextWide-Heavy;
+  font-size: 1.8em;
+  transform: translateY(10%);
+}

@@ -1,2 +1,2 @@
 # Fatti_di_Dati
-Synthesis Design Studio C1 2021-2022 Website
+Website for 2021-2022 Synthesis Design Studio C1

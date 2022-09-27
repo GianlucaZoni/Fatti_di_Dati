@@ -1,0 +1,480 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../assets/fonts/Helvetica.otf");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../assets/fonts/Helvetica-Bold.otf");
+}
+
+@font-face {
+  font-family: "BastardoGroteskish";
+  src: url("../assets/fonts/BastardoGroteskish.otf");
+}
+
+@font-face {
+  font-family: "BastardoGroteskish-Bold";
+  src: url("../assets/fonts/BastardoGroteskish-Bold.otf");
+}
+
+@font-face {
+  font-family: "CarbonPlus";
+  src: url("../assets/fonts/CarbonPlus.otf");
+}
+
+@font-face {
+  font-family: "CarbonPlus-Bold";
+  src: url("../assets/fonts/CarbonPlus-Bold.otf");
+}
+
+@font-face {
+  font-family: "CronosPro-Semibold";
+  src: url("../assets/fonts/CronosPro-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Dharma-Gothic-Rounded-E-Bold";
+  src: url("../assets/fonts/Dharma-Gothic-Rounded-E-Bold.otf");
+}
+
+@font-face {
+  font-family: "DrukTextWide-Heavy";
+  src: url("../assets/fonts/DrukTextWide-Heavy.otf");
+}
+
+@font-face {
+  font-family: "EuclidCircularA-Light";
+  src: url("../assets/fonts/EuclidCircularA-Light.otf");
+}
+
+@font-face {
+  font-family: "EuclidCircularA-Regular";
+  src: url("../assets/fonts/EuclidCircularA-Regular.otf");
+}
+
+@font-face {
+  font-family: "GT-America-Expanded-Thin";
+  src: url("../assets/fonts/GT-America-Expanded-Thin.otf");
+}
+
+@font-face {
+  font-family: "GT-America-Mono-Bold";
+  src: url("../assets/fonts/GT-America-Mono-Bold.otf");
+}
+
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: url("../assets/fonts/IntegralCF-Bold.otf");
+}
+
+@font-face {
+  font-family: "PAGRevolucion";
+  src: url("../assets/fonts/PAGRevolucion.otf");
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("../assets/fonts/Rubik-Bold.otf");
+}
+
+@font-face {
+  font-family: "SofiaPro-Bold";
+  src: url("../assets/fonts/SofiaPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Sourtype-Black";
+  src: url("../assets/fonts/Sourtype-Black.otf");
+}
+
+@font-face {
+  font-family: "StingerFit-Bold";
+  src: url("../assets/fonts/StingerFit-Bold.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  /* height: 100vh; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  max-width: 100vw;
+  background-color: #cbcbcb;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 5vh auto 0 auto;
+} */
+
+body {
+  background-color: #cbcbcb;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.second {
+  background-color: #cbcbcb;
+  display: none;
+  top: 0;
+  position: absolute;
+  padding: 12vh 4vw 4vw 4vw;
+  z-index: 10;
+  font-family: Helvetica-Bold;
+  font-size: 17px;
+}
+
+.second a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px black solid;
+}
+
+.colophon {
+  font-size: 0.8em;
+  padding-bottom: 15vh;
+  list-style: none;
+}
+
+.colophon ul {
+  list-style: none;
+  margin-top: 20px;
+  font-family: Helvetica-Bold;
+  text-transform: uppercase;
+}
+
+.colophon li {
+  font-family: Helvetica;
+}
+
+.colophon ul li {
+  list-style: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* #title{
+  font-family: Helvetica-Bold;
+  font-size: 5vw;
+  margin-left: 3vw;
+  margin-top: 1.5vw;
+}
+
+#subtitle{
+  font-family: Helvetica-Bold;
+  font-size: 5vw;
+} */
+
+#titleMobile {
+  font-family: Helvetica-Bold;
+  font-size: 5vw;
+  margin-left: 3vw;
+  margin-top: 1.5vw;  
+  z-index: 11;
+
+  /* float:left; */
+  /* position: sticky; */
+}
+
+#subtitleMobile {
+  font-family: Helvetica-Bold;
+  font-size: 5vw;
+  z-index: 11;
+
+  /* position: sticky; */
+}
+
+#titleMobile2 {
+  font-family: Helvetica-Bold;
+  font-size: 5vw;
+  margin-left: 3vw;
+  margin-top: 1.5vw;
+  z-index: 11;
+
+  /* float: left; */
+}
+
+#subtitleMobile2 {
+  font-family: Helvetica-Bold;
+  font-size: 5vw;
+  z-index: 11;
+
+}
+
+#plusMobile {
+  line-height: 30px;
+  margin-right: 7vw;
+  margin-top: 1.5vw;  
+  font-family: Helvetica;
+  font-size: 64px;
+  z-index: 200;
+}
+
+.menuWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Outmain {
+  height: 100vh;
+  margin-top: 7.5vh;
+}
+
+.Inmain {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  /* position: fixed; */
+  /* top: 2vh; */
+  /* margin-left: 3.5vw; */
+  /* z-index: 10; */
+}
+
+.menu ul {
+  /* position: absolute; */
+  /* width: 100vw; */
+}
+
+.menu li {
+  font-family: Helvetica-Bold;
+  /* display: inline-block; */
+  list-style: none;
+  font-size: 24px;
+}
+
+.menu2 {
+  position: fixed;
+  bottom: 4.5vh;
+  margin-left: 3.5vw;
+  z-index: 1000;
+}
+
+.menu2 ul {
+  position: absolute;
+  width: 100vw;
+  /* background-color:#cbcbcb; */
+  padding-bottom: 10vh; 
+  margin-bottom:-10vh;
+}
+
+.bgHider {
+  background-color: transparent;
+}
+
+.menu2 li {
+  font-family: Helvetica-Bold;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+}
+
+.wrapperMain {
+  /* display: block; */
+  /* cursor: pointer; */
+  /* position: fixed; */
+  font-size: 1.7em;
+  font-family: Helvetica-Bold;
+  color: #ffffff;
+}
+
+.wrapperMain a {
+  color: #ffffff;
+  opacity: 1;
+}
+
+#ticMobile {
+  /* left: 45%; */
+  /* top: 18%; */
+  transition-duration: 0.5s;
+}
+
+#ticMobile:hover {
+  /* font-family: "EuclidCircularA"; */
+  font-family: EuclidCircularA-Regular;
+  font-weight: 700;
+  font-size: 2em;
+  transform: translateY(-15%);
+}
+
+#dissitMobile {
+  /* right: 50%; */
+  /* right: 45%; */
+  /* top: 24%; */
+  transition-duration: 0.5s;
+}
+
+#dissitMobile:hover {
+  /* font-family: "SofiaPro"; */
+  font-family: SofiaPro-Bold;
+  font-weight: 700;
+  font-size: 1.9em;
+  transform: translateY(-15%);
+}
+
+#sickoMobile {
+  /* right: 45%; */
+  /* right: 50%; */
+  /* top: 30%; */
+  transition-duration: 0.5s;
+}
+
+#sickoMobile:hover {
+  /* font-family: "BastardoGroteskish"; */
+  font-family: BastardoGroteskish-Bold;
+  font-weight: 700;
+  font-size: 2em;
+  transform: translateY(7%);
+}
+
+#crybabyMobile {
+  /* right: 45%; */
+  /* top: 36%; */
+  transition-duration: 0.5s;
+}
+
+#crybabyMobile:hover {
+  /* font-family: "DharmaGothicRoundedE"; */
+  /* font-family: Dharma-Gothic-Rounded-E; */
+  font-family: PAGRevolucion;
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  /* transform: translateY(-5%); */
+}
+
+#morMobile {
+  /* right: 45%; */
+  /* top: 42%; */
+  /* transition-duration: 0.5s; */
+}
+
+#morMobile:hover {
+  font-family: Rubik-Bold;
+  font-weight: 600;
+  font-size: 2.2em;
+  /* transform: translateY(-2%); */
+}
+
+#rumoMobile {
+  /* right: 45%; */
+  /* top: 48%; */
+  /* transition-duration: 0.5s; */
+}
+
+#rumoMobile:hover {
+  font-family: StingerFit-Bold;
+  font-weight: 600;
+  font-size: 2em;
+  /* transform: translateY(-2%); */
+}
+
+#uaiMobile {
+  /* left: 45%; */
+  /* top: 54%; */
+  transition-duration: 0.5s;
+}
+
+#uaiMobile:hover {
+  font-family: GT-America-Mono-Bold;
+  font-weight: 400;
+  font-size: 1.9em;
+  /* transform: translateY(-10%); */
+}
+
+#sourdataMobile {
+  /* right: 45%; */
+  /* top: 60%; */
+  transition-duration: 0.5s;
+}
+
+#sourdataMobile:hover {
+  font-family: SourType-Black;
+  font-size: 1.8em;
+  transform: translateY(25%);
+}
+
+#freyaMobile {
+  /* left: 45%; */
+  /* top: 66%; */
+  transition-duration: 0.5s;
+}
+
+#freyaMobile:hover {
+  font-family: GT-America-Expanded-Thin;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  /* transform: translateY(-10%); */
+}
+
+#nexnetMobile {
+  /* left: 45%; */
+  /* top: 72%; */
+  transition-duration: 0.5s;
+}
+
+#nexnetMobile:hover {
+  font-family: CarbonPlus-Bold;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  /* transform: translateY(-5%); */
+}
+
+#ustressMobile {
+  /* right: 45%; */
+  /* top: 78%; */
+  transition-duration: 0.5s;
+}
+
+#ustressMobile:hover {
+  font-family: IntegralCF-Bold;
+  font-size: 1.8em;
+
+  transform: translateY(-8%);
+}
+
+#discordiaMobile {
+  /* left: 48%; */
+  /* left: 45%; */
+  /* top: 84%; */
+  transition-duration: 0.5s;
+}
+
+#discordiaMobile:hover {
+  font-family: DrukTextWide-Heavy;
+  font-size: 1.8em;
+  transform: translateY(10%);
+  /* left: 20%; */
+}
