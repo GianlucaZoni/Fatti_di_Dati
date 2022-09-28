@@ -92,11 +92,27 @@
 
         .containerprogetti, .containerprogettismall {
             font-family: 'DrukText-Medium';
+            color:white;
         }
 
-        .coloresfondo {
-            background-color: #ffffff;
+        a, span, .open {
+            color: white;
         }
+
+        .coloresfondo, body {
+            background-color: #B22423;
+        }
+
+        @media only screen
+  and (min-width : 1024px)
+{
+  .player {
+    cursor: url("../media/02dissit/Play2 white.svg") 37 37, auto;
+  }
+  .closer {
+    cursor: url("../media/02dissit/Close white.svg") 20 20, auto;
+  }
+    }
 
         .prevprogetto, .prev {
             background-color: #E23A26;
@@ -319,8 +335,8 @@
                                         </div>
                                     </div>
                                     <div class="column">
-                                        <div class="links">discordia-clothing.herokuapp.com/web/index.html</div>
-                                        <div class="links">@discordia_clothing</div>
+                                        <a href="http://discordia-clothing.herokuapp.com/web/index.html" target="_blank"><div class="links">discordia-clothing.herokuapp.com/web/index.html</div></a>
+                                        <a href="https://www.instagram.com/discordia_clothing/" target="_blank"><div class="links">@discordia_clothing</div></a>
                                         <div class="sottotitolo">
                                             E se potessimo cambiare il peso degli insulti?
                                         </div>
@@ -627,8 +643,8 @@
                     <div class="coloresfondo">
                         <div class="textsmall ita">
                             <div class="paragrafotitoli">
-                                <a href="url"><div class="links">discordia-clothing.herokuapp.com/web/index.html</div></a>
-                                <a href="url"><div class="links">@discordia_clothing</div></a>
+                                <a href="http://discordia-clothing.herokuapp.com/web/index.html" target="_blank"><div class="links">discordia-clothing.herokuapp.com/web/index.html</div></a>
+                                <a href="https://www.instagram.com/discordia_clothing/" target="_blank"><div class="links">@discordia_clothing</div></a>
                                 <div class="titolosmall">
                                     Discordia
                                 </div>
@@ -739,6 +755,26 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="../js/scriptProject.js"></script>
+    <script>
+        var bgDark=true;
+        $(".open").on("click", function (event) {
+        if (bgDark) {
+    
+        $("a").css("color","black");
+        $("span").css("color","black");
+        $(".open").css("color","black");
+    
+        bgDark=false;
+        } else {
+    
+        $("a").css("color","white");
+        $("span").css("color","white");
+        $(".open").css("color","white");
+    
+        bgDark = true;
+        }
+        });
+      </script>
 
 </body>
 </html>

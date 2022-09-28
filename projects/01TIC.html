@@ -37,9 +37,13 @@
 
   .containerprogetti, .containerprogettismall {
     font-family: "EuclidCircularA-Regular", sans-serif;
+    color: white;
     font-style: normal;
   }
-  .coloresfondo {
+  a, span, .open {
+    color: white;
+  }
+  .coloresfondo, body {
     background-color: #9682e5;
   }
 
@@ -77,6 +81,17 @@
     font-family: 'SofiaPro-Light', sans-serif;
     color: black;
   }
+
+  @media only screen
+  and (min-width : 1024px)
+{
+  .player {
+    cursor: url("../media/02dissit/Play2 white.svg") 37 37, auto;
+  }
+  .closer {
+    cursor: url("../media/02dissit/Close white.svg") 20 20, auto;
+  }
+    }
 
   /* .nextprogetto, .testo  {
   padding-top: 19vh;
@@ -696,8 +711,8 @@
 
 
        <div class="nextprogetto" style="height: 28vh;"><a href="/projects/02DISSIT.html">
-           <div class="testo ita" style="padding-top: 8vh;">PROSSIMO PROGETTO</div>
-           <div class="testo eng" style="padding-top: 8vh;">NEXT PROJECT</div>
+           <div class="testo ita" style="padding-top: 8vh; color: black">PROSSIMO PROGETTO</div>
+           <div class="testo eng" style="padding-top: 8vh; color: black">NEXT PROJECT</div>
            <img src="../media/02dissit/dissit.png" class="logonext" style="max-width: 15vh;"></a>
        </div>
 
@@ -708,6 +723,26 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="../js/scriptProject.js"></script>
+  <script>
+    var bgDark=true;
+    $(".open").on("click", function (event) {
+    if (bgDark) {
+
+    $("a").css("color","black");
+    $("span").css("color","black");
+    $(".open").css("color","black");
+
+    bgDark=false;
+    } else {
+
+    $("a").css("color","white");
+    $("span").css("color","white");
+    $(".open").css("color","white");
+
+    bgDark = true;
+    }
+    });
+  </script>
 
 </body>
 </html>

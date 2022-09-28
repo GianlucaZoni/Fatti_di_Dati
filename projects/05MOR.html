@@ -42,7 +42,7 @@
   a, span, .open {
     color: white;
   }
-  .coloresfondo {
+  .coloresfondo, body {
   background-color: #024236;
 }
 
@@ -694,6 +694,26 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="../js/scriptProject.js"></script>
+  <script>
+    var bgDark=true;
+    $(".open").on("click", function (event) {
+    if (bgDark) {
+
+    $("a").css("color","black");
+    $("span").css("color","black");
+    $(".open").css("color","black");
+
+    bgDark=false;
+    } else {
+
+    $("a").css("color","white");
+    $("span").css("color","white");
+    $(".open").css("color","white");
+
+    bgDark = true;
+    }
+    });
+  </script>
 
 </body>
 </html>

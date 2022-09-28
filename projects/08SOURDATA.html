@@ -81,11 +81,27 @@
 
         .containerprogetti, .containerprogettismall {
             font-family: 'TTNorms-Regular';
+            color: white;
         }
 
-        .coloresfondo {
-            background-color: #ffffff;
+        .coloresfondo, body {
+            background-color: #FF5961;
         }
+
+        a, span, .open {
+            color: white;
+        }
+
+        @media only screen
+  and (min-width : 1024px)
+{
+  .player {
+    cursor: url("../media/02dissit/Play2 white.svg") 37 37, auto;
+  }
+  .closer {
+    cursor: url("../media/02dissit/Close white.svg") 20 20, auto;
+  }
+    }
 
 
         .prevprogetto, .prev {
@@ -310,7 +326,7 @@
                                     </div>
                                     <div class="column">
                                         
-                                        <div class="links">@sour_data</div>
+                                        <a href="https://www.instagram.com/sour_data/" target="_blank"><div class="links">@sour_data</div></a>
                                         <div class="sottotitolo">
                                             Se avessimo la possibilità di guadagnare vendendo<br />
                                             i nostri dati più intimi e privati, saremmo disposti a farlo?
@@ -627,7 +643,7 @@
                         <div class="textsmall ita">
                             <div class="paragrafotitoli">
                                 
-                                <a href="url"><div class="links">@sour_data</div></a>
+                                <a href="https://www.instagram.com/sour_data/" target="_blank"><div class="links">@sour_data</div></a>
                                 <div class="titolosmall">
                                     Sour Data
                                 </div>
@@ -744,6 +760,26 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="../js/scriptProject.js"></script>
+    <script>
+        var bgDark=true;
+        $(".open").on("click", function (event) {
+        if (bgDark) {
+    
+        $("a").css("color","black");
+        $("span").css("color","black");
+        $(".open").css("color","black");
+    
+        bgDark=false;
+        } else {
+    
+        $("a").css("color","white");
+        $("span").css("color","white");
+        $(".open").css("color","white");
+    
+        bgDark = true;
+        }
+        });
+      </script>
 
 </body>
 </html>
