@@ -20,7 +20,7 @@ $(".open").on("click", function (event) {
 
     $(".content").css("display","initial");
 
-    $("body").css("overflow", "scroll");
+    // $("body").css("overflow", "scroll");
 
     $("a").css("color","black");
     $("span").css("color","black");
@@ -146,6 +146,7 @@ function fullsizevideo() {
     $("#containervideo").css("height", "100vh");
     $("#containervideo").css("max-height", "100vh");
     $(".containerprogetti").css("top", "100vh");
+    $("#myVideo").css("height","100%");
     $("body").css("overflow", "hidden");
     vid.muted = false;
     window.scrollTo(0, 0);
@@ -154,6 +155,7 @@ function fullsizevideo() {
     $("#containervideo").css("height", "70vh");
     $("#containervideo").css("max-height", "70vh");
     $(".containerprogetti").css("top", "65vh");
+    $("#myVideo").css("height","auto");
     $("body").css("overflow", "scroll");
     vid.muted = true;
     playvid = false;

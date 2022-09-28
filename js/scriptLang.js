@@ -5,11 +5,13 @@ $(".open").on("click", function (event) {
     $(".second").css("display", "block");
     $(".open").css("transform", "rotate(45deg)");
     $(".bgHider").css("background-color","#cbcbcb");
+    // $("body").css("overflow", "scroll");
     hidow = true;
   } else {
     $(".second").css("display", "none");
     $(".open").css("transform", "rotate(0deg)");
     $(".bgHider").css("background-color","transparent");
+    // $("body").css("overflow", "hidden");
     hidow = false;
   }
 });

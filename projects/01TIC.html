@@ -34,6 +34,7 @@
   <meta http-equiv="Cache-Control" content="no-cache">
 
 <style>
+
   .containerprogetti, .containerprogettismall {
     font-family: "EuclidCircularA-Regular", sans-serif;
     font-style: normal;
@@ -51,34 +52,46 @@
       max-height: 37vh;
     }
 
-  .nextprogettoTIC, .prox {
+    .prevprogetto, .prev {
+        background-color: #B22423;
+        cursor: url("../media/12discordia/discordia.svg") 62 62, auto;
+        font-family: 'DrukTextWide-Heavy';
+        color: black;
+  }
+
+  /* .nextprogetto, .next {
   background-color: white;
   cursor: url("../media/02dissit/dissit.svg") 62 62, auto;
   font-family: 'SofiaPro-Light', sans-serif;
   color: black;
+  } */
+
+  .nextprogetto, .prox {
+    flex: 50%;
+    transition: 0.6s;
+    z-index: 3;
+    text-align: center;
+
+    background-color: white;
+    cursor: url("../media/02dissit/dissit.svg") 62 62, auto;
+    font-family: 'SofiaPro-Light', sans-serif;
+    color: black;
   }
 
-  .nextprogettoTIC {
-   flex: 100%;
-   transition: 0.6s;
-   z-index: 3;
-   text-align: center;
-  }
-
-  .nextprogettoTIC .testo  {
+  /* .nextprogetto, .testo  {
   padding-top: 19vh;
   font-size: 28px;
   line-height: 30px;
   font-family: 'SofiaPro-Light', sans-serif;
-  }
+  } */
 
   .TIC {
       font-family: 'SofiaPro-Light', sans-serif;
   }
-
+/* 
   .prox {
     flex: 100%;
-  }
+  } */
   </style>
 </head>
 
@@ -123,7 +136,7 @@
               <br><br>
               12 progetti realizzati nell’arco di 6 mesi, 12 prototipi di macchine comunicative per speculare e criticare, immaginando presenti alternativi o futuri possibili.
               <br><br><br>
-              <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Scarica il catalogo digitale</a>
+              <a href="../assets/Fatti_di_Dati.pdf" download="FATTI_DI_DATI" target="_blank">Scarica il catalogo digitale</a>
               <br>
               <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:12vw; margin-top:5vh; margin-bottom:1vh"></a>
               <br>
@@ -148,7 +161,7 @@
                 <br><br>
                 12 projects carried out over 6 months, 12 prototypes of communication machines to speculate and criticize, imagining alternative presents or possible futures.
                 <br><br><br>
-                <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Download the digital catalog</a>
+                <a href="../assets/Fatti_di_Dati.pdf" download="FATTI_DI_DATI" target="_blank">Download the digital catalog</a>
                 <br>
                 <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:12vw; margin-top:5vh; margin-bottom:1vh"></a>
                 <br>
@@ -167,12 +180,14 @@
       <div style="width:45vw; position: absolute; margin-left: 2.5vw; top:0; left:52vw">
         <div class="colophon" style="width:16vw; display:inline-block">
           <ul>
-            <li>Project Leader</li><br>
+            <li class="ita">Project Leader</li>
+            <li class="eng">Project Leader</li>
             <li>Riccardo Ventura</li>
           </ul>
 
           <ul>
-            <li>Visual Identity </li>
+            <li class="ita">Identità Visiva</li>
+            <li class="eng">Visual Identity</li>
             <li>Sofia Bonfanti</br>
                 Edoardo Ceriani</br>
                 Giovanni Clericetti</br>
@@ -180,12 +195,14 @@
           </ul>
 
           <ul>
-            <li>Art Direction</li>
+            <li class="ita">Art Direction</li>
+            <li class="eng">Art Direction</li>
             <li>Andrea Sanguineti</li>
           </ul>
 
           <ul>
-            <li>Editorial Design</li>
+            <li class="ita">Catalogo</li>
+            <li class="eng">Editorial Design</li>
             <li>
               Chiara Barberi</br>
               Sofia Cambiaggio</br>
@@ -194,13 +211,15 @@
           </ul>
 
           <ul>
-            <li>Social Media</li>
+            <li class="ita">Social Media</li>
+            <li class="eng">Social Media</li>
             <li>Nausica Bianchi<br>
               Luigi Raspa</li>
           </ul>
 
           <ul>
-            <li>Website</li>
+            <li class="ita">Website</li>
+            <li class="eng">Website</li>
             <li>Andrea Nodari</br>
               Marco Trabattoni</br>
               Gianluca Zoni
@@ -210,50 +229,53 @@
         </div>
         <div class="colophon" style="margin-left: 1vw; width:16vw; display:inline-block;vertical-align:top">
 
-            <ul>
-              <li>Teachers</li>
-              <li>
-                Francesco E. Guida<br>
-                Pietro Buffa di Castelalto<br>
-                Alessandro Masserdotti<br>
-                Giacomo Scandolara
-              </li>
-            </ul>
+          <ul>
+            <li class="ita">Docenti</li>
+            <li class="eng">Teachers</li>
+            <li>
+              Francesco E. Guida<br>
+              Pietro Buffa di Castelalto<br>
+              Alessandro Masserdotti<br>
+              Giacomo Scandolara
+            </li>
+          </ul>
 
-            <ul>
-              <li>Assistants</li>
-              <li>
-                Marcello J. Biffi <br>
-                Michele Invernizzi <br>
-                Adele Mazzali <br>
-                Claudia Tranti
-              </li>
-            </ul>
+          <ul>
+            <li class="ita">Assistenti</li>
+            <li class="eng">Assistants</li>
+            <li>
+              Marcello J. Biffi <br>
+              Michele Invernizzi <br>
+              Adele Mazzali <br>
+              Claudia Tranti
+            </li>
+          </ul>
 
-            <ul>
-              <li>Links</li>
-              <li>
-                <a href="http://wordsworks.labsintesi-c1.info/" target="_blank">Words Works</a>
-              </li>
-              <li>
-                <a href="http://humans.labsintesi-c1.info/" target="_blank">WMHH?</a>
-              </li>
-              <li>
-                <a href="http://morte13.labsintesi-c1.info/" target="_blank">Morte - 13 solidi dubbi</a>
-              </li>
-              <li>
-                <a href="http://retuals.labsintesi-c1.info/" target="_blank">Retuals.</a>
-              </li>
-            </ul>
+          <ul>
+            <li class="ita">Link</li>
+            <li class="eng">Links</li>
+            <li>
+              <a href="http://wordsworks.labsintesi-c1.info/" target="_blank">Words Works</a>
+            </li>
+            <li>
+              <a href="http://humans.labsintesi-c1.info/" target="_blank">WMHH?</a>
+            </li>
+            <li>
+              <a href="http://morte13.labsintesi-c1.info/" target="_blank">Morte - 13 solidi dubbi</a>
+            </li>
+            <li>
+              <a href="http://retuals.labsintesi-c1.info/" target="_blank">Retuals.</a>
+            </li>
+          </ul>
 
-            <!-- <ul>
-              <li>Endorsed by</li>
-              <li>
-                <a href="http://www.aiap.it" style="border:none" target="_blank"><img src="media/AIAP.png" alt="" style="width:12vw; margin-top:1vh"></a><br>
-              </li>
-            </ul> -->
+          <!-- <ul>
+            <li>Endorsed by</li>
+            <li>
+              <a href="http://www.aiap.it" style="border:none" target="_blank"><img src="media/AIAP.png" alt="" style="width:12vw; margin-top:1vh"></a><br>
+            </li>
+          </ul> -->
 
-          </div>
+        </div>
       </div>
     </div>
 
@@ -404,17 +426,23 @@
 
     </div>
     <div class="copertura">
-      <div class="prox" onclick="go02()"></div>
+        <div class="prev" onmouseover="allargasx()" onmouseout="balance()" onclick="go12()"></div>
+        <div class="prox" onmouseover="allargadx()" onmouseout="balance()" onclick="go02()"></div>
     </div>
     </div>
 
 
 
     <div class="altriprogetti">
-        <div class="nextprogettoTIC">
-            <div class="testo ita"><a href="/projects/02DISSIT.html">PROSSIMO PROGETTO</a></div>
-            <div class="testo eng"><a href="/projects/02DISSIT.html">NEXT PROJECT</a></div>
+        <div class="prevprogetto">
+            <div class="testo ita">PROGETTO PRECEDENTE</div>
+            <div class="testo eng">PREVIOUS PROJECT</div>
         </div>
+        <div class="nextprogetto">
+            <div class="testo ita" style="font-size: 28px; line-height: 25px;">PROSSIMO PROGETTO</div>
+            <div class="testo eng" style="font-size: 28px; line-height: 25px;">NEXT PROJECT</div>
+        </div>
+        
     </div>
 
 
@@ -448,7 +476,7 @@
             12 progetti realizzati nell’arco di 6 mesi, 12 prototipi di macchine comunicative per speculare e criticare, immaginando presenti alternativi o futuri possibili.
             <br><br><br>
 
-            <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Scarica il catalogo digitale</a>
+            <a href="../assets/Fatti_di_Dati.pdf" download="FATTI_DI_DATI" target="_blank">Scarica il catalogo digitale</a>
             <br>
             <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:45vw; margin-top:5vh"></a>
             <br><br><span style="font-family: Helvetica;">
@@ -470,7 +498,7 @@
             12 projects carried out over 6 months, 12 prototypes of communication machines to speculate and criticize, imagining alternative presents or possible futures.
             <br><br><br>
 
-            <a href="../assets/GUIDA.jpg" download="FATTI_DI_DATI" target="_blank">Download the digital catalog</a>
+            <a href="../assets/Fatti_di_Dati.pdf" download="FATTI_DI_DATI" target="_blank">Download the digital catalog</a>
             <br>
             <a href="https://www.design.polimi.it/it" style="border:none" target="_blank"><img src="../media/polimi.png" alt="" style="width:45vw; margin-top:5vh"></a>
             <br><br><span style="font-family: Helvetica;">
@@ -483,44 +511,53 @@
 
         <div class="colophon">
 
-          <ul>Project Leader</ul>
+          <ul class="ita">Project Leader</ul>
+          <ul class="eng">Project Leader</ul>
           <li>Riccardo Ventura</li>
-
-          <ul>Visual Identity</ul>
+  
+          <ul class="ita">Identità Visiva</ul>
+          <ul class="eng">Visual Identity</ul>
           <li>Sofia Bonfanti</li>
           <li>Edoardo Ceriani</li>
           <li>Giovanni Clericetti</li>
           <li>Francesco Nozza</li>
-
-          <ul>Art Direction</ul>
+  
+          <ul class="ita">Art Direction</ul>
+          <ul class="eng">Art Direction</ul>
           <li>Andrea Sanguineti</li>
-
-          <ul>Editorial Design</ul>
+  
+          <ul class="ita">Catalogo</ul>
+          <ul class="eng">Editorial Design</ul>
           <li>Chiara Barberi</li>
           <li>Sofia Cambiaggio</li>
           <li>Marta Cuccurullo</li>
-
-          <ul>Social Media</ul>
+  
+          <ul class="ita">Social Media</ul>
+          <ul class="eng">Social Media</ul>
           <li>Nausica Bianchi</li>
           <li>Luigi Raspa</li>
-
-          <ul>Website</ul>
+  
+          <ul class="ita">Website</ul>
+          <ul class="eng">Website</ul>
           <li>Andrea Nodari</li>
           <li>Marco Trabattoni</li>
           <li>Gianluca Zoni</li>
-
-          <ul>Teachers</ul>
+  
+          <ul class="ita">Docenti</ul>
+          <ul class="eng">Teachers</ul>
           <li>Francesco E. Guida</li>
           <li>Pietro Buffa di Castelalto</li>
           <li>Alessandro Masserdotti</li>
           <li>Giacomo Scandolara</li>
-
-          <ul>Assistants</ul>
+  
+          <ul class="ita">Assistenti</ul>
+          <ul class="eng">Assistants</ul>
           <li>Marcello J. Biffi</li>
           <li>Michele Invernizzi</li>
           <li>Claudia Tranti</li>
-
-          <ul>Links</ul>
+  
+          <ul class="ita">Link</ul>
+          <ul class="eng">Links</ul>
             <li>
               <a href="http://wordsworks.labsintesi-c1.info/" target="_blank">Words Works</a>
             </li>
@@ -533,7 +570,7 @@
             <li>
               <a href="http://retuals.labsintesi-c1.info/" target="_blank">Retuals.</a>
             </li>
-
+  
           <!-- <ul>Endorsed By</ul>
           <li><a href="http://www.aiap.it" style="border:none" target="_blank"><img src="media/AIAP.png" alt="" style="width:45vw; margin-top:1vh"></a><br></li> -->
         </div>
@@ -654,14 +691,14 @@
                                             <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/687836523?h=1ced91e3a6&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                                     </div>
                 </div>
-                <a href="02DISSIT.html"><div class="copertura"></div></a>
+                <a href="02DISSIT.html"><div class="copertura" style="height: 24vh;"></div></a>
             </div>
 
 
-       <div class="nextprogetto TIC"><a href="/projects/02DISSIT.html">
-           <div class="testo ita">PROSSIMO PROGETTO</div>
-           <div class="testo eng">NEXT PROJECT</div>
-           <img src="../media/02dissit/dissit.png" class="logonext"></a>
+       <div class="nextprogetto" style="height: 28vh;"><a href="/projects/02DISSIT.html">
+           <div class="testo ita" style="padding-top: 8vh;">PROSSIMO PROGETTO</div>
+           <div class="testo eng" style="padding-top: 8vh;">NEXT PROJECT</div>
+           <img src="../media/02dissit/dissit.png" class="logonext" style="max-width: 15vh;"></a>
        </div>
 
     </div>
