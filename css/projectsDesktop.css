@@ -29,6 +29,10 @@ body {
   src: url("../assets/fonts/TTNorms-Regular.otf");
 }
 @font-face {
+  font-family: "TTNorms-Black";
+  src: url("../assets/fonts/TTNorms-Black.otf");
+}
+@font-face {
   font-family: "BastardoGroteskish";
   src: url("../assets/fonts/BastardoGroteskish.otf");
 }
